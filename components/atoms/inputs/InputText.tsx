@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { contadorCaracteres } from "../../../utils/contadorCaracteres";
 import { ContadorPalavras } from "../../../utils/contadorPalavras";
 import { toast } from "sonner";
-import CoppyButton from "../buttons/CoppyButton";
+import CoppyButton from "../../molecules/buttons/CoppyButton";
 import v from 'voca';
 import CaseButton from "../buttons/CaseButton";
 
@@ -60,8 +60,6 @@ export default function TextInput(){
                     <p>Quantidade de palavras: {ContadorPalavras(texto)}</p>
                 </div>
                 <div>
-                    <p>Já aqui, ficarão os botões para alterar a case dos textos</p>
-
                         <CaseButton onClick={() => {
                             setTexto(texto.toLowerCase());
                             SafeText(texto.toLowerCase())
