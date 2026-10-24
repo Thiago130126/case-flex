@@ -11,4 +11,4 @@ green 300 - 800
 emerald 400 - 600
 lime 200
 
-quero colocar animações, transições, transições entre as páginas, gradientes
+quero colocar animações, transições, transições entre as páginas, gradientes, carrosel
