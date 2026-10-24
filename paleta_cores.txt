@@ -3,3 +3,10 @@
 #0afb89
 #c0c0c0
 #1A1A1A
+
+
+Tailwind
+zinc-800 para preto
+green 300 - 800
+emerald 400 - 600
+lime 200
