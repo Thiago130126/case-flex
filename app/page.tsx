@@ -1,4 +1,4 @@
-import TextInput from "@/components/atoms/inputs/InpuText";
+import TextInput from "@/components/atoms/inputs/InputText";
 
 export default function Home() {
 

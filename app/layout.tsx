@@ -6,7 +6,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="pt-BR"
     >
-      <body>
+      <body suppressHydrationWarning>
         {children}
         <Toaster theme="dark" position="top-right" richColors closeButton/>
       </body>
