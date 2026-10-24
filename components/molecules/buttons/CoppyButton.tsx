@@ -6,7 +6,7 @@ interface CoppyButtonProps{
 
 export default function CoppyButton({conteudo}: CoppyButtonProps){
     const baseStyles = "px-3 py-1.5 text-sm font-medium rounded-lg transition-all duration-200 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed";
-    const primary = "bg-blue-600 hover:bg-blue-700 text-white shadow-sm";
+    const primary = "bg-emerald-600 hover:bg-emerald-500 text-white shadow-sm";
 
     const Copiar = async () => {
 

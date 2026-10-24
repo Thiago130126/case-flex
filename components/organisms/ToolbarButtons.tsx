@@ -23,13 +23,15 @@ export default function ToolbarButton({
         SafeText(novoTexto);
     }
 
+    const toolbar = 'flex flex-wrap items-center gap-2'
+    
     return(
-        <div>
-            <CaseButton onClick={() => {aplicarTransformacao(texto.toLowerCase())}}>
+        <div className={`${toolbar}`}>
+            <CaseButton onClick={() => {aplicarTransformacao(texto.toLowerCase())}} variant="primary">
                 Lower
             </CaseButton>
 
-            <CaseButton onClick={() => {aplicarTransformacao(texto.toUpperCase())}}>
+            <CaseButton onClick={() => {aplicarTransformacao(texto.toUpperCase())}} variant="primary">
                 Upper
             </CaseButton>
 
@@ -41,19 +43,19 @@ export default function ToolbarButton({
                 Title
             </CaseButton>
 
-            <CaseButton onClick={() => {aplicarTransformacao(v.camelCase(texto))}}>
+            <CaseButton onClick={() => {aplicarTransformacao(v.camelCase(texto))}} variant="outline">
                 Camel
             </CaseButton>
 
-            <CaseButton onClick={() => {aplicarTransformacao(v.snakeCase(texto))}}>
+            <CaseButton onClick={() => {aplicarTransformacao(v.snakeCase(texto))}} variant="outline">
                 Snake
             </CaseButton>
 
-            <CaseButton onClick={() => {aplicarTransformacao(v.kebabCase(texto))}}>
+            <CaseButton onClick={() => {aplicarTransformacao(v.kebabCase(texto))}} variant="outline">
                 Kebab
             </CaseButton>
 
-            <CaseButton onClick={() => {aplicarTransformacao(v.slugify(texto))}}>
+            <CaseButton onClick={() => {aplicarTransformacao(v.slugify(texto))}} variant="outline">
                 Slugify
             </CaseButton>
 

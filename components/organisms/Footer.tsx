@@ -3,7 +3,7 @@ export default function Footer(){
     const section1 = 'flex flex-row gap-5'
 
     return (
-        <div className={`${footer_div}`}>
+        <footer className={`${footer_div}`}>
             <section className={`${section1}`}>
                 <h1>Footer</h1>
                 <div>
@@ -19,6 +19,6 @@ export default function Footer(){
                 CaseFlex 2026&copy; todos os direitos reservados
             </section>
 
-        </div>
+        </footer>
     );
 }

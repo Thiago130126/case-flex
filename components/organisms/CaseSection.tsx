@@ -49,19 +49,36 @@ export default function CaseSection(){
         AcessarStorage();
     }, []);
 
+    const section = 'w-full max-w-4xl mx-auto px-4 py-8';
+    const cardPrincipal = 'bg-zinc-800 border border-zinc-700/60 rounded-2xl shadow-xl overflow-hidden';
+    const input = 'p-4';
+    const estatisticas = 'px-5 py-2.5 bg-zinc-800/40 border-t border-zinc-700/40 flex items-center justify-between text-xs text-zinc-400';
+    const ferramentas = 'p-4 bg-zinc-900/70 border-t border-zinc-700/60';
+
     return (
-        <div>
-            <TextInput texto={texto} TextManager={TextManager}/>
+        <section className={`${section}`}>
 
-            <StatusTexto texto={texto}/>
+            <div className={`${cardPrincipal}`}>
 
-            <ToolbarButton
-                texto={texto}
-                textoOriginal={textoOriginal}
-                setTexto={setTexto}
-                SafeText={SafeText}
-                LimparTexto={LimparTexto}
-            />
-        </div>
+                <div className={`${input}`}>
+                    <TextInput texto={texto} TextManager={TextManager}/>
+                </div>
+                
+                <div className={`${estatisticas}`}>
+                    <StatusTexto texto={texto}/>
+                </div>
+                
+                <div className={`${ferramentas}`}>
+                    <ToolbarButton
+                        texto={texto}
+                        textoOriginal={textoOriginal}
+                        setTexto={setTexto}
+                        SafeText={SafeText}
+                        LimparTexto={LimparTexto}
+                    />
+                </div>
+
+            </div>
+        </section>
     );
 }
