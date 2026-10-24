@@ -1,7 +1,11 @@
 import { contadorCaracteres } from "@/utils/contadorCaracteres";
 import { ContadorPalavras } from "@/utils/contadorPalavras";
 
-export default function StatusTexto(texto: string){
+interface StatusTextoProps{
+    texto: string;
+}
+
+export default function StatusTexto({texto}: StatusTextoProps){
     return (
         <div>
             <p>Quantidade de caracteres: {contadorCaracteres(texto)}</p>
