@@ -11,7 +11,7 @@ export default function Header(){
     const links_navegacao = 'flex items-center gap-4 text-sm font-medium text-zinc-300';
     const link_inicio = 'hover:text-lime-300 transition-colors'
     const ponto = 'text-zinc-500';
-    const resto_links = 'text-zinc-500 cursor-not-allowed';
+    const links_em_desenvolvimento = 'text-zinc-500 cursor-not-allowed';
 
     return(
         <header className={header_div}>
@@ -25,9 +25,9 @@ export default function Header(){
                 <nav className={links_navegacao}>
                     <Link href={'/'} className={link_inicio}>Inicio</Link>
                     <span className={ponto}>•</span>
-                    <span className={resto_links}>
-                        Sobre (em breve)
-                    </span>
+                    <Link href={'/sobre'} className={link_inicio}>
+                        Sobre
+                    </Link>
                 </nav>
             </div>
         </header>

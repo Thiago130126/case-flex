@@ -12,3 +12,19 @@ emerald 400 - 600
 lime 200
 
 quero colocar animações, transições, transições entre as páginas, gradientes, carrosel
+
+Próximo passo será trazer conteúdo de texto para a página principal, uns 3 textos já são o suficiente
+
+No Next.js tradicional, a troca de rota é instantânea. Para criar transições suaves (como um fade-in ou deslize):
+
+A biblioteca padrão da comunidade é o framer-motion:
+Ela é a melhor ferramenta para animações em React.
+Como funciona conceitualmente:
+Você cria um arquivo template.tsx (recurso nativo do Next.js App Router). Ao contrário de layout.tsx (que mantém o estado entre rotas), 
+o template.tsx é recriado a cada troca de rota, permitindo que o framer-motion dispare animações de entrada e saída toda vez que o usuário navegar.
+
+O Que são cases
+Guia Rápido dos Formatos Principais (Grade de Cards)
+Como usar o CaseFlex?
+Vantagens / Diferenciais da Ferramenta
+Seção de FAQ 
