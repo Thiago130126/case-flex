@@ -1,0 +1,21 @@
+{
+    "inputTextArea": {
+        "placeholder": "Escribe tu texto aquí..."
+    },
+    "coppyButton": {
+        "text": "Copiar texto",
+        "message": "Texto vacío",
+        "success": "Texto copiado correctamente",
+        "error": "Error interno al copiar texto"
+    },
+    "textStats": {
+        "caracteres": "Caracteres",
+        "palavras": "Palabras"
+    },
+    "footer": {
+
+    },
+    "header": {
+
+    }
+}

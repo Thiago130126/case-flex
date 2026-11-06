@@ -3,8 +3,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import { useTranslations } from "use-intl";
 
 export default function Header(){
+
+    const t = useTranslations('header');
 
     const [isOpen, setIsOpen] = useState(false);
 

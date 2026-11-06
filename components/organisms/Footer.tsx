@@ -1,4 +1,9 @@
-export default function Footer(){
+import { getTranslations } from "next-intl/server";
+
+export default async function Footer(){
+
+    const t = await getTranslations('footer');
+
     const footer_div = 'w-full bg-zinc-950 border-t border-zinc-800 py-10 mt-12 text-sm text-zinc-400'
     const next = 'text-emerald-400 font-medium';
     const tailwind = 'text-lime-300 font-medium';
