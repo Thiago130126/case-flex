@@ -9,6 +9,8 @@ interface SlugPageProps{
     }>;
 }
 
+
+
 export default async function Page({params}: SlugPageProps){
     const {locale, slug} = await params;
 

@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import CaseButton from "../atoms/buttons/CaseButton";
 import CoppyButton from "../molecules/buttons/CoppyButton";
 import v from 'voca';
@@ -22,6 +23,8 @@ export default function ToolbarButton({
         setTexto(novoTexto);
         SafeText(novoTexto);
     }
+
+    const t = useTranslations("toolbar");
 
     const toolbar = 'flex flex-wrap items-center gap-2'
     
@@ -72,7 +75,7 @@ export default function ToolbarButton({
             </CaseButton>
 
             <CaseButton onClick={() => {LimparTexto()}} variant="danger">
-                Limpar Texto
+                {t("limpar_texto")}
             </CaseButton>
 
             <CoppyButton conteudo={texto}/>

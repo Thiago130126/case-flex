@@ -40,10 +40,10 @@ export default function Header(){
                 </Link>
 
                 <nav className={nav_desktop}>
-                    <Link href={'/'} className={link_desktop}>Inicio</Link>
+                    <Link href={'/'} className={link_desktop}>{t("home")}</Link>
                     <span className={ponto}>•</span>
                     <Link href={'/sobre'} className={link_desktop}>
-                        Sobre
+                        {t("sobre")}
                     </Link>
                 </nav>
 
@@ -67,9 +67,9 @@ export default function Header(){
 
             {isOpen && (
                 <nav className={menu_mobile}>
-                    <Link href={'/'} className={link_mobile} onClick={() => setIsOpen(false)}>Inicio</Link>
+                    <Link href={'/'} className={link_mobile} onClick={() => setIsOpen(false)}>{t("home")}</Link>
                     <Link href={'/sobre'} className={link_mobile} onClick={() => setIsOpen(false)}>
-                        Sobre
+                        {t("sobre")}
                     </Link>
                 </nav>
             )}

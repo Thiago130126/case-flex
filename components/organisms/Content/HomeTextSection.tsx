@@ -1,22 +1,22 @@
 import InfoCard from "@/components/molecules/content/InfoCard";
+import { getTranslations } from "next-intl/server";
 
-export default function HomeTextSection(){
+export default async function HomeTextSection(){
+
+    const t = await getTranslations("home_text_section");
 
     const cards = [
         {
-            title: "Por que existem?",
-            description: 
-                "Em linguagens de programação, nomes de variáveis, funções e arquivos não podem conter espaços. As convenções de nomenclatura foram criadas para manter o código legível e padronizado."
+            title: t("card1.title"),
+            description: t("card1.description")
         },
         {
-            title: "Código vs. Web",
-            description:
-                "Diferentes ambientes exigem estilos diferentes. Enquanto APIs e bancos de dados usam formatos como snake_case, URLs na web costumam exigir kebab-case ou slugify para SEO amigável.",
+            title: t("card2.title"),
+            description: t("card2.description")
         },
         {
-            title: "Padronização de Equipe",
-            description:
-                "Cada linguagem adota um padrão de mercado (ex: JavaScript prefere camelCase, Python usa snake_case). Respeitar essas convenções evita bugs e facilita a leitura em equipe.",
+            title: t("card3.title"),
+            description: t("card3.description")
         }
     ];
 
@@ -31,10 +31,10 @@ export default function HomeTextSection(){
         <section className={section}>
             <div className={title_paragraph_div}>
                 <h2 className={h2}>
-                    O que são <span className={span}>Cases</span> de texto?
+                    {t("h2_star")} <span className={span}>{t("h2_span")}</span>{t("h2_end")}
                 </h2>
                 <p className={p}>
-                    "Cases" são convenções e regras de formatação para combinar palavras sem usar espaços simples, garantindo clareza sintática e estética em código-fonte, banco de dados e sistemas digitais.
+                    {t('p_sobre')}
                 </p>
             </div>
 

@@ -12,10 +12,75 @@
         "caracteres": "Characters",
         "palavras": "Words"
     },
-    "footer" : {
-
+    "caseSection":{
+        "error": "Internal error when accessing session storage"
+    },
+    "footer" : {    
+        "h3": "Case",
+        "h3_span": "Flex",
+        "pequeno_texto": "A fast, online tool for switching between text formats and code naming conventions.",
+        "title_column2": "Popular Formats",
+        "copy": "2026 CaseFlex. All rights reserved.",
+        "dev": "Developed with",
+        "next": "Next.js",
+        "tailwind": "Tailwind CSS",
+        "link_sobre": "About",
+        "link_politica-privacidade": "Privacy Policies",
+        "link_conversor_case": "Case Converter"
     },
     "header": {
-
+        "home": "Home",
+        "sobre": "About",
+        "kebab": "Kebab-Case",
+        "camel": "camelCase",
+        "snake": "snake_Case",
+        "slugify": "Slugify"
+    },
+    "toolbar":{
+        "limpar_texto": "Clear Text"
+    },
+    "home": {
+        "h2": "Online Case Converter"
+    },
+    "home_text_section": {
+        "h2_star": "What are text",
+        "h2_span": "Cases",
+        "h2_end": "?",
+        "p_sobre": "“Cases” are a set of conventions and formatting rules used to combine multiple words into a single identifier without using spaces.",
+        "card1": {
+            "title": "Why do they exist?",
+            "description": "In programming languages, variable, function, and file names cannot contain spaces. Naming conventions were created to keep code readable and standardized."
+        },
+        "card2": {
+            "title": "Code vs Web",
+            "description": "Different contexts call for different styles. While APIs and databases use formats like snake_case, web URLs typically require kebab-case or slugify for SEO-friendliness."
+        },
+        "card3": {
+            "title": "Team Standardization",
+            "description": "Each programming language follows a market standard (e.g., JavaScript prefers camelCase, Python uses snake_case). Adhering to these conventions helps prevent bugs and makes the code easier for the team to read."
+        }
+    },
+    "sobre": {
+        "h1": "About",
+        "h1_span": "CaseFlex",
+        "p": "Learn about the concept and principles behind the tool."
+    },
+    "sobre_text": {
+        "badge": "The Project",
+        "title":"What is CaseFlex?",
+        "p1_start":"",
+        "p1":"was created by a solo developer who wanted to hone his skills in Next.js, React, internationalization, and SEO, and to launch projects.",
+        "p1_strong": "CaseFlex",
+        "p2": "This project is the third one I've created on my own, as part of my effort to become a better developer.",
+        "diferenciais": {
+            "t1": "100% Client-Side",
+            "d1": "Your text never leaves your browser. It is not sent to external servers.",
+            "t2": "Privacy and Persistence",
+            "d2": "Using sessionStorage so you don't lose your text when you accidentally switch tabs.",
+            "t3": "Continuous Development",
+            "d3": "Built with Next.js, React, and Tailwind CSS using a modular architecture.",
+            "t4": "Focused on Developers & Creators",
+            "d4": "Designed to speed up the formatting of variables, constants, and slugs for the web."
+        }
     }
 }

@@ -12,10 +12,75 @@
         "caracteres": "Caracteres",
         "palavras": "Palavras"
     },
+    "caseSection":{
+        "error": "Falha internao ao acessar session storage"
+    },
     "footer": {
-
+        "h3": "Case",
+        "h3_span": "Flex",
+        "pequeno_texto": "Utilitário online e rápido para alternar formatos de texto e convenções de nomenclatura de código.",
+        "title_column2": "Formatos Populares",
+        "copy": "2026 CaseFlex. Todos os direitos reservados.",
+        "dev": "Desenvolvido com",
+        "next": "Next.js",
+        "tailwind": "Tailwind CSS",
+        "link_sobre": "Sobre",
+        "link_politica-privacidade": "Políticas de Privacidade",
+        "link_conversor_case": "Conversor de Case"
     },
     "header": {
-
+        "home": "Inicio",
+        "sobre": "Sobre",
+        "kebab": "Kebab-Case",
+        "camel": "camelCase",
+        "snake": "snake_Case",
+        "slugify": "Slugify"
+    },
+    "toolbar":{
+        "limpar_texto": "Limpar Texto"
+    },
+    "home": {
+        "h2": "Conversor de Case Online"
+    },
+    "home_text_section": {
+        "h2_star": "O que são",
+        "h2_span": "Cases ",
+        "h2_end": "de texto?",
+        "p_sobre": "“Cases” são um conjunto de convenções e regras de formatação usadas para combinar múltiplas palavras em um único identificador sem recorrer a espaços simples.",
+        "card1": {
+            "title": "Por que existem?",
+            "description": "Em linguagens de programação, nomes de variáveis, funções e arquivos não podem conter espaços. As convenções de nomenclatura foram criadas para manter o código legível e padronizado."
+        },
+        "card2": {
+            "title": "Código vs Web",
+            "description": "Diferentes ambientes exigem estilos diferentes. Enquanto APIs e bancos de dados usam formatos como snake_case, URLs na web costumam exigir kebab-case ou slugify para SEO amigável."
+        },
+        "card3": {
+            "title": "Padronização de Equipe",
+            "description": "Cada linguagem adota um padrão de mercado (ex: JavaScript prefere camelCase, Python usa snake_case). Respeitar essas convenções evita bugs e facilita a leitura em equipe."
+        }
+    },
+    "sobre": {
+        "h1": "Sobre o",
+        "h1_span": "CaseFlex",
+        "p": "Conheça a proposta e os princípios por trás da ferramenta."
+    },
+    "sobre_text": {
+        "badge": "O Projeto",
+        "title":"O que é o Case Flex",
+        "p1_start":"O",
+        "p1":"foi criado por um dev solo, afim de afiar suas habilidades em NextJS, React, Internacionalização, SEO e colocar projetos no ar.",
+        "p1_strong": "CaseFlex",
+        "p2": "Esse projeto, é o meu terceiro projeto próprio criado, em busca de me tornar um dev melhor.",
+        "diferenciais": {
+            "t1": "100% Client-Side",
+            "d1": "Seus textos nunca saem do seu navegador. Não há envio para servidores externos.",
+            "t2": "Privacidade e Persistência",
+            "d2": "Uso de sessionStorage para você não perder seu texto ao alternar abas acidentalmente.",
+            "t3": "Desenvolvimento Contínuo",
+            "d3": "Construído com Next.js, React e Tailwind CSS com arquitetura modular.",
+            "t4": "Focado em Devs & Criadores",
+            "d4": "Feito para acelerar a formatação de variáveis, constantes e slugs para a web."
+        }
     }
 }

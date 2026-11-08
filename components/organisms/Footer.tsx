@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import Link from "next/link";
 
 export default async function Footer(){
 
@@ -26,37 +27,40 @@ export default async function Footer(){
                 <div className={div_conteudo}>
                     <div>
                         <h3 className={h3}>
-                            Case<span className={h3_span}>Flex</span>
+                            {t("h3")}<span className={h3_span}>{t("h3_span")}</span>
                         </h3>
                         <p className={p}>
-                            Utilitário online e rápido para alternar formatos de texto e convenções de nomenclatura de código.
+                            {t("pequeno_texto")}
                         </p>
                     </div>
 
                     <div className={div_paginas}>
                         <div className={div_interna_paginas}>
-                            <span className={paginas_links}>Formatos Populares</span>
+                            <span className={span_logo}>{t("title_column2")}</span>
                             <span className={paginas_links}>camelCase</span>
                             <span className={paginas_links}>snake_Case</span>
                             <span className={paginas_links}>Kebab-Case</span>
+                            <span className={paginas_links}>Slugify</span>
                         </div>
 
                         <div className="flex flex-col gap-2">
                             <span className={span_logo}>
-                                Case<span className={span_logo_2}>Flex</span>
+                                {t("h3")}<span className={span_logo_2}>{t("h3_span")}</span>
                             </span>
-                            <span className={paginas_links}>Sobre</span>
-                            <span className={paginas_links}>Políticas de Privacidade</span>
+                            <span className={paginas_links}>{t("link_sobre")}</span>
+                            <span className={paginas_links}>{t("link_politica-privacidade")}</span>
+                            <span className={paginas_links}>Boring Site</span>
+                            <span className={paginas_links}>{t("link_conversor_case")}</span>
                         </div>
                     </div>
                 </div>
 
                 <div>
                     <p className={copy}>
-                        &copy;2026 CaseFlex. Todos os direitos reservados.
+                        &copy;{t("copy")}
                     </p>
                     <p>
-                        Desenvolvido com <span className={next}>Next.js</span> & <span className={tailwind}>Tailwind CSS</span>
+                        {t("dev")} <Link href={'https://nextjs.org/'} target="_blank" className={next}>{t("next")}</Link> & <Link href={'https://tailwindcss.com/'} target="_blank" className={tailwind}>{t("tailwind")}</Link>
                     </p>
                 </div>
 

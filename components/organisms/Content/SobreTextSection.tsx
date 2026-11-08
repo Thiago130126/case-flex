@@ -1,40 +1,43 @@
 import ArticleBlock from "@/components/molecules/content/ArticleBlock";
 import FeatureList from "@/components/molecules/content/FeatureList";
+import { getTranslations } from "next-intl/server";
 
-export default function SobreTextSection(){
+export default async function SobreTextSection(){
+    const t = await getTranslations("sobre_text");
+
     const diferenciais = [
         {
-            title: '100% Client-Side',
-            description: 'Seus textos nunca saem do seu navegador. Não há envio para servidores externos.'
+            title: t("diferenciais.t1"),
+            description: t("diferenciais.d1")
         },
         {
-            title: "Privacidade e Persistência",
-            description: "Uso de sessionStorage para você não perder seu texto ao alternar abas acidentalmente."
+            title: t("diferenciais.t2"),
+            description: t("diferenciais.d2")
         },
         {
-            title: "Desenvolvimento Contínuo",
-            description: "Construído com Next.js, React e Tailwind CSS com arquitetura modular."
+            title: t("diferenciais.t3"),
+            description: t("diferenciais.d3")
         },
         {
-            title: "Focado em Devs & Criadores",
-            description: "Feito para acelerar a formatação de variáveis, constantes e slugs para a web."
+            title: t("diferenciais.t4"),
+            description: t("diferenciais.d4")
         }
     ];
 
     const section = 'w-full max-w-3xl mx-auto px-4 py-12 space-y-12';
 
-    const badge = 'O Projeto';
-    const title = 'O que é o Case Flex';
+    const badge = t("badge");
+    const title = t("title");
 
     return(
         <section className={section}>
 
             <ArticleBlock badge={badge} title={title}>
                 <p>
-                    O <strong>CaszeFlex</strong> foi criado por um dev solo, afim de afiar suas habilidades em NextJS, React, Internacionalização, SEO e colocar projetos no ar.
+                    {t("p1_start")} <strong>{t("p1_strong")}</strong> {t("p1")}
                 </p>
                 <p>
-                    Esse projeto, é o meu terceiro projeto próprio criado, em busca de me tornar um dev melhor.
+                    {t("p2")}
                 </p>
 
                 <FeatureList items={diferenciais}/>

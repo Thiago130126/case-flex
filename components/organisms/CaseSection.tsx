@@ -5,9 +5,11 @@ import { toast } from "sonner";
 import ToolbarButton from "./ToolbarButtons";
 import StatusTexto from "../molecules/navegation/TextStats";
 import TextInput from "../atoms/inputs/InputText";
-
+import { useTranslations } from "use-intl";
 
 export default function CaseSection(){
+
+    const t = useTranslations("caseSection");
 
     const [texto, setTexto] = useState('');
 
@@ -42,7 +44,7 @@ export default function CaseSection(){
                     setTextoOriginal(textoOriginal);
                 }
             }catch(error){
-                toast.error("Falha internao ao acessar session storage");
+                toast.error(t("error"));
                 console.log("Falha internao ao acessar session storage: ", error);
             }
         }

@@ -41,6 +41,10 @@ export type CanonicalPath = keyof typeof routing.pathnames;
 export function getCanonicalpath(locale: Locale, slug:string): CanonicalPath | null{
     const currentPath = `/${slug}`;
 
+    if(currentPath in routing.pathnames){
+        return currentPath as CanonicalPath;
+    }
+
     for(const [canonical, translations] of Object.entries(routing.pathnames)) {
         if (typeof translations === 'string' && translations === currentPath){
             return canonical as CanonicalPath;
