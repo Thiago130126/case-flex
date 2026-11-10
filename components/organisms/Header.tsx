@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "use-intl";
+import LanguageSwitcher from "../molecules/navegation/LanguageSwitcher";
 
 export default function Header(){
 
@@ -63,6 +64,8 @@ export default function Header(){
                         </svg>
                     )}
                 </button>
+
+                <LanguageSwitcher/>
             </div>
 
             {isOpen && (
