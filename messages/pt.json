@@ -58,7 +58,21 @@
         "card3": {
             "title": "Padronização de Equipe",
             "description": "Cada linguagem adota um padrão de mercado (ex: JavaScript prefere camelCase, Python usa snake_case). Respeitar essas convenções evita bugs e facilita a leitura em equipe."
-        }
+        },
+        "card4": {
+            "title": "Surgimento das Cases",
+            "description": "As convenções de nomenclatura nasceram de uma limitação técnica bastante simples: a maioria das linguagens de programação não permite espaços em identificadores (variáveis, funções, classes etc). Elas são o resultado da combinação entre restrições de teclado, limitações de compiladores e sistemas operacionais, e as preferências das comunidades que se formaram em torno de cada linguagem."
+        },
+        "card5": {
+            "title": "Evolução",
+            "description": "As convenções de case evoluíram a partir de uma necessidade técnica: a proibição de espaços em identificadores. No início, cada comunidade de linguagem adotou soluções próprias, algumas preferiram underscores, outras a capitalização interna das palavras. Com o tempo, esses estilos se consolidaram e foram formalizados em guias oficiais, como o PEP 8 do Python. Hoje, a evolução está menos na criação de novos formatos e mais na padronização e automação: linters e formatters garantem consistência, enquanto conversores facilitam a transição entre sistemas que ainda usam convenções diferentes."
+        },
+        "card6": {
+            "title": "Além do código",
+            "description": "As convenções de case não se limitam ao código-fonte. Elas aparecem em nomes de arquivos e pastas, chaves de configuração, variáveis de ambiente, colunas e tabelas de banco de dados, rotas de APIs, atributos HTML e CSS, e até em identificadores de sistemas de mensageria. Em cada um desses contextos, o objetivo continua sendo o mesmo: garantir legibilidade e consistência sem o uso de espaços, adaptando-se às regras e limitações de cada ambiente."
+        },
+        "historia": "Surgimento das Cases",
+        "texto_origem": "A maioria das convenções de case (especialmente em código) foi pensada para o alfabeto latino básico (ASCII), o que gera vários problemas ao lidar com outros idiomas. Caracteres acentuados e não-latinos, como em “avaliação”, “código” ou “usuário”, e ainda mais em russo, árabe, chinês, japonês ou coreano, são geralmente evitados em identificadores por questões de compatibilidade. Além disso, a normalização Unicode pode fazer com que o mesmo caractere seja representado de formas diferentes (ex.: “é” como um único caractere ou como “e” + acento combinante), levando o compilador a tratar como distintos identificadores que parecem iguais. Em alguns idiomas, como o turco, a conversão entre maiúsculas e minúsculas também não é simples, o que complica comparações case-insensitive. Historicamente, compiladores e ferramentas só lidavam bem com ASCII, e o uso de caracteres não-ASCII em variáveis, funções ou arquivos podia causar problemas de encoding, busca, versionamento (Git) e portabilidade. Por isso, até hoje a maioria dos style guides recomenda manter identificadores de código em ASCII puro, reservando a internacionalização para textos legíveis pelo usuário, como mensagens de erro, labels de interface e documentação."
     },
     "sobre": {
         "h1": "Sobre o",
@@ -69,9 +83,9 @@
         "badge": "O Projeto",
         "title":"O que é o Case Flex",
         "p1_start":"O",
-        "p1":"foi criado por um dev solo, afim de afiar suas habilidades em NextJS, React, Internacionalização, SEO e colocar projetos no ar.",
+        "p1":"é um conversor de case, online e 100% gratuito, criado por um dev solo, com o objetivo de adquirir mais experiência com projetos reais, Next, React, Tailwind, SEO, Internacionalização e Monetização. Além de, claro, aumentar meu portfólio.",
         "p1_strong": "CaseFlex",
-        "p2": "Esse projeto, é o meu terceiro projeto próprio criado, em busca de me tornar um dev melhor.",
+        "p2": "Esse projeto, é o meu terceiro projeto próprio criado, em busca de me tornar um dev melhor. As grandes vantagens que esse site tem em relação aos meus dois projetos anteriores, é por enquanto a modularidade do código. Eu me esforcei para criar um código que fosse mais fácil de escalar e fazer manutenção. Também pretendo fazer o deploy desse projeto bem mais profissional do que os anteriores, na verdade, os anteriores estavam mais para uma gambiarra.",
         "diferenciais": {
             "t1": "100% Client-Side",
             "d1": "Seus textos nunca saem do seu navegador. Não há envio para servidores externos.",

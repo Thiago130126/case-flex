@@ -58,7 +58,21 @@
         "card3": {
             "title": "Team Standardization",
             "description": "Each programming language follows a market standard (e.g., JavaScript prefers camelCase, Python uses snake_case). Adhering to these conventions helps prevent bugs and makes the code easier for the team to read."
-        }
+        },
+        "card4": {
+            "title": "The Emergence of the Cases",
+            "description": "Naming conventions arose from a fairly simple technical limitation: most programming languages do not allow spaces in identifiers (variables, functions, classes, etc.). They are the result of a combination of keyboard constraints, limitations of compilers and operating systems, and the preferences of the communities that have formed around each language."
+        },
+        "card5": {
+            "title": "Evolution",
+            "description": "Coding conventions evolved out of a technical necessity: the prohibition of spaces in identifiers. At first, each programming language community adopted its own solutions; some preferred underscores, while others favored internal capitalization of words. Over time, these styles became established and were formalized in official guidelines, such as Python’s PEP 8. Today, the focus is less on creating new formats and more on standardization and automation: linters and formatters ensure consistency, while converters facilitate the transition between systems that still use different conventions."
+        },
+        "card6": {
+            "title": "Beyond the code",
+            "description": "Coding conventions aren't limited to source code. They appear in file and folder names, configuration keys, environment variables, database columns and tables, API routes, HTML and CSS attributes, and even in messaging system identifiers. In each of these contexts, the goal remains the same: to ensure readability and consistency without using spaces, while adapting to the rules and limitations of each environment."
+        },
+        "historia": "The Emergence of the Cases",
+        "texto_origem": "Most naming conventions (especially in code) were designed for the basic Latin alphabet (ASCII), which causes several problems when dealing with other languages. Accented and non-Latin characters, such as in “evaluation,” “code,” or “user” and even more so in Russian, Arabic, Chinese, Japanese, or Korean—are generally avoided in identifiers for compatibility reasons. Furthermore, Unicode standardization can cause the same character to be represented in different ways (e.g., “é” as a single character or as “e” + combining accent), leading the compiler to treat identifiers that look the same as distinct. In some languages, such as Turkish, case conversion is also not straightforward, which complicates case-insensitive comparisons. Historically, compilers and tools only handled ASCII well, and the use of non-ASCII characters in variables, functions, or files could cause problems with encoding, searching, version control (Git), and portability. For this reason, even today, most style guides recommend keeping code identifiers in pure ASCII, reserving internationalization for user-readable text, such as error messages, interface labels, and documentation."
     },
     "sobre": {
         "h1": "About",
@@ -69,9 +83,9 @@
         "badge": "The Project",
         "title":"What is CaseFlex?",
         "p1_start":"",
-        "p1":"was created by a solo developer who wanted to hone his skills in Next.js, React, internationalization, and SEO, and to launch projects.",
+        "p1":"is an online case converter that’s 100% free, created by a solo developer with the goal of gaining more experience with real-world projects—Next, React, Tailwind, SEO, internationalization, and monetization. And, of course, to expand my portfolio.",
         "p1_strong": "CaseFlex",
-        "p2": "This project is the third one I've created on my own, as part of my effort to become a better developer.",
+        "p2": "This project is the third one I’ve created on my own, as part of my effort to become a better developer. The main advantage this site has over my two previous projects, at least for now, is the code’s modularity. I worked hard to create code that would be easier to scale and maintain. I also plan to deploy this project in a much more professional way than the previous ones; in fact, the previous ones were more like quick fixes.",
         "diferenciais": {
             "t1": "100% Client-Side",
             "d1": "Your text never leaves your browser. It is not sent to external servers.",

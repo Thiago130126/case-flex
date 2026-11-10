@@ -58,7 +58,21 @@
         "card3": {
             "title": "Estandarización del equipo",
             "description": "Cada lenguaje adopta un estándar de mercado (por ejemplo: JavaScript prefiere camelCase, mientras que Python utiliza snake_case). Respetar estas convenciones evita errores y facilita la lectura en equipo."
-        }
+        },
+        "card4": {
+            "title": "El surgimiento de las Cases",
+            "description": "Las convenciones de nomenclatura surgieron de una limitación técnica bastante sencilla: la mayoría de los lenguajes de programación no permiten espacios en los identificadores (variables, funciones, clases, etc.). Son el resultado de la combinación de restricciones del teclado, limitaciones de los compiladores y los sistemas operativos, y las preferencias de las comunidades que se han formado en torno a cada lenguaje."
+        },
+        "card5": {
+            "title": "Evolución",
+            "description": "Las convenciones de estilo surgieron a raíz de una necesidad técnica: la prohibición de espacios en los identificadores. Al principio, cada comunidad de lenguaje adoptó sus propias soluciones; algunas prefirieron los guiones bajos, otras el uso de mayúsculas en medio de las palabras. Con el tiempo, estos estilos se consolidaron y se formalizaron en guías oficiales, como la PEP 8 de Python. Hoy en día, la evolución no radica tanto en la creación de nuevos formatos como en la estandarización y la automatización: los linters y los formateadores garantizan la coherencia, mientras que los convertidores facilitan la transición entre sistemas que aún utilizan convenciones diferentes."
+        },
+        "card6": {
+            "title": "Además del código",
+            "description": "Las convenciones de nomenclatura no se limitan al código fuente. Aparecen en nombres de archivos y carpetas, claves de configuración, variables de entorno, columnas y tablas de bases de datos, rutas de API, atributos HTML y CSS, e incluso en identificadores de sistemas de mensajería. En cada uno de estos contextos, el objetivo sigue siendo el mismo: garantizar la legibilidad y la coherencia sin utilizar espacios, adaptándose a las normas y limitaciones de cada entorno."
+        },
+        "historia": "El surgimiento de las Cases",
+        "texto_origem": "La mayoría de las convenciones de estilo (especialmente en el código) se diseñaron para el alfabeto latino básico (ASCII), lo que genera diversos problemas a la hora de trabajar con otros idiomas. Los caracteres acentuados y no latinos, como en «evaluación», «código» o «usuario», y más aún en ruso, árabe, chino, japonés o coreano, suelen evitarse en los identificadores por cuestiones de compatibilidad. Además, la normalización Unicode puede hacer que un mismo carácter se represente de formas diferentes (p. ej., «é» como un único carácter o como «e» + acento combinante), lo que lleva al compilador a tratar como distintos a identificadores que parecen iguales. En algunos idiomas, como el turco, la conversión entre mayúsculas y minúsculas tampoco es sencilla, lo que complica las comparaciones que no distinguen entre mayúsculas y minúsculas. Históricamente, los compiladores y las herramientas solo gestionaban bien el ASCII, y el uso de caracteres no ASCII en variables, funciones o archivos podía causar problemas de codificación, búsqueda, control de versiones (Git) y portabilidad. Por eso, hasta hoy, la mayoría de las guías de estilo recomiendan mantener los identificadores de código en ASCII puro, reservando la internacionalización para los textos legibles por el usuario, como los mensajes de error, las etiquetas de la interfaz y la documentación."
     },
     "sobre": {
         "h1": "Acerca de",
@@ -69,9 +83,9 @@
         "badge": "El proyecto",
         "title":"¿Qué es CaseFlex?",
         "p1_start":"",
-        "p1":"fue creado por un desarrollador independiente con el objetivo de perfeccionar sus habilidades en Next.js, React, internacionalización y SEO, así como de poner en marcha proyectos.",
+        "p1":"es un conversor de mayúsculas y minúsculas, en línea y 100 % gratuito, creado por un desarrollador independiente con el objetivo de adquirir más experiencia en proyectos reales, Next, React, Tailwind, SEO, internacionalización y monetización. Además, por supuesto, de ampliar mi portafolio.",
         "p1_strong": "CaseFlex",
-        "p2": "Este proyecto es el tercero que he creado por mi cuenta, con el objetivo de convertirme en un mejor desarrollador.",
+        "p2": "Este proyecto es el tercero que he creado por mi cuenta, con el objetivo de convertirme en un mejor desarrollador. La gran ventaja que tiene esta web con respecto a mis dos proyectos anteriores es, por ahora, la modularidad del código. Me he esforzado por crear un código que sea más fácil de escalar y de mantener. También pretendo llevar a cabo el despliegue de este proyecto de una forma mucho más profesional que en los anteriores; de hecho, los anteriores eran más bien chapuzas.",
         "diferenciais": {
             "t1": "100% Client-Side",
             "d1": "Tus textos nunca salen de tu navegador. No se envían a servidores externos.",

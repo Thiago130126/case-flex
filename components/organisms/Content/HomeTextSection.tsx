@@ -1,3 +1,4 @@
+import ArticleBlock from "@/components/molecules/content/ArticleBlock";
 import InfoCard from "@/components/molecules/content/InfoCard";
 import { getTranslations } from "next-intl/server";
 
@@ -17,9 +18,22 @@ export default async function HomeTextSection(){
         {
             title: t("card3.title"),
             description: t("card3.description")
+        },
+        {
+            title: t("card4.title"),
+            description: t("card4.description")
+        },
+        {
+            title: t("card5.title"),
+            description: t("card5.description")
+        },
+        {
+            title: t("card6.title"),
+            description: t("card6.description")
         }
     ];
 
+    const div_pagina = 'flex flex-col gap-10';
     const section = 'w-full max-w-4xl mx-auto px-4 py-12 border-t border border-zinc-800';
     const title_paragraph_div = 'mb-8';
     const h2 = 'text-2xl sm:text-3xl font-bold text-white mb-3';
@@ -28,21 +42,34 @@ export default async function HomeTextSection(){
     const map_card = 'grid grid-cols-1 md:grid-cols-3 gap-4';
 
     return(
-        <section className={section}>
-            <div className={title_paragraph_div}>
-                <h2 className={h2}>
-                    {t("h2_star")} <span className={span}>{t("h2_span")}</span>{t("h2_end")}
-                </h2>
-                <p className={p}>
-                    {t('p_sobre')}
-                </p>
-            </div>
+        <div className={div_pagina}>
+            <section className={section}>
+                <div className={title_paragraph_div}>
+                    <h2 className={h2}>
+                        {t("h2_star")} <span className={span}>{t("h2_span")}</span>{t("h2_end")}
+                    </h2>
+                    <p className={p}>
+                        {t('p_sobre')}
+                    </p>
+                </div>
 
-            <div className={map_card}>
-                {cards.map((card) => (
-                    <InfoCard key={card.title} {...card}/>
-                ))}
-            </div>
-        </section>
+                <div className={map_card}>
+                    {cards.map((card) => (
+                        <InfoCard key={card.title} {...card}/>
+                    ))}
+                </div>
+
+                <br />
+            </section>
+
+            <section className={section}>
+                <ArticleBlock title={t("historia")}>
+                    <p>
+                        {t("texto_origem")}
+
+                    </p>
+                </ArticleBlock>
+            </section>
+        </div>
     );
 }
