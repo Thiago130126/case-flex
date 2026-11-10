@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
+import { Link as LinkInterno } from "@/i18n/routes";
 
 export default async function Footer(){
 
@@ -39,20 +40,42 @@ export default async function Footer(){
                     <div className={div_paginas}>
                         <div className={div_interna_paginas}>
                             <span className={span_logo}>{t("title_column2")}</span>
-                            <span className={paginas_links}>camelCase</span>
-                            <span className={paginas_links}>snake_Case</span>
-                            <span className={paginas_links}>Kebab-Case</span>
-                            <span className={paginas_links}>Slugify</span>
+
+                            <LinkInterno href={'/camel-case'} className={paginas_links}>
+                                camelCase
+                            </LinkInterno>
+
+                            <LinkInterno href={'/snake-case'} className={paginas_links}>
+                                snake_Case
+                            </LinkInterno>
+
+                            <LinkInterno href={'/kebab-case'} className={paginas_links}>
+                                Kebab-Case
+                            </LinkInterno>
+
+                            <LinkInterno href={'/slugify'} className={paginas_links}>
+                                Slugify
+                            </LinkInterno>
                         </div>
 
                         <div className="flex flex-col gap-2">
                             <span className={span_logo}>
                                 {t("h3")}<span className={span_logo_2}>{t("h3_span")}</span>
                             </span>
-                            <span className={paginas_links}>{t("link_sobre")}</span>
-                            <span className={paginas_links}>{t("link_politica-privacidade")}</span>
-                            <span className={paginas_links}>Boring Site</span>
-                            <span className={paginas_links}>{t("link_conversor_case")}</span>
+                            <LinkInterno href={'/sobre'} className={paginas_links}>
+                                {t("link_sobre")}
+                            </LinkInterno>
+
+                            <LinkInterno href={'/politica-privacidade'} className={paginas_links}>
+                                {t("link_politica-privacidade")}
+                            </LinkInterno>
+
+                            <LinkInterno href={'/boring-site'} className={paginas_links}>
+                                Boring Site
+                            </LinkInterno>
+                            <LinkInterno href={'/conversor-case'} className={paginas_links}>
+                                {t("link_conversor_case")}
+                            </LinkInterno>
                         </div>
                     </div>
                 </div>

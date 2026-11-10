@@ -4,6 +4,9 @@ import { Locale, usePathname, useRouter } from "@/i18n/routes";
 import { useLocale } from "next-intl";
 import { useTransition } from "react";
 
+export const active_button = 'bg-zinc-800 text-lime-300 shadow-sm';
+export const not_active = 'text-zinc-400 hover:text-zinc-200';
+
 const languages: {code: Locale, label: string}[] = [
     {code: 'pt', label: 'PT'},
     {code: 'en', label: 'EN'},
@@ -27,8 +30,6 @@ export default function LanguageSwitcher(){
 
     const div = `inline-flex items-center p-1 rounded-lg bg-zinc-900/80 border border-zinc-700/60 ${isPending ? 'opacity-60 pointer-events-none' : ''}`;
     const button = `px-2.5 py-1 text-xs font-semibold rounded-md transition-all`;
-    const active_button = 'bg-zinc-800 text-lime-300 shadow-sm';
-    const not_active = 'text-zinc-400 hover:text-zinc-200';
 
     return(
         <div className={div}>

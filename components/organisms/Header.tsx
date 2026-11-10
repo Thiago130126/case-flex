@@ -1,12 +1,14 @@
 'use client';
 
-import Link from "next/link";
+import { Link, usePathname } from "@/i18n/routes";
 import Image from "next/image";
 import { useState } from "react";
 import { useTranslations } from "use-intl";
-import LanguageSwitcher from "../molecules/navegation/LanguageSwitcher";
+import LanguageSwitcher, { active_button } from "../molecules/navegation/LanguageSwitcher";
 
 export default function Header(){
+
+    const pathname = usePathname();
 
     const t = useTranslations('header');
 
@@ -41,9 +43,11 @@ export default function Header(){
                 </Link>
 
                 <nav className={nav_desktop}>
-                    <Link href={'/'} className={link_desktop}>{t("home")}</Link>
+                    <Link href={'/'} className={`${link_desktop} ${pathname === '/' ? active_button : ''}`}>
+                        {t("home")}
+                    </Link>
                     <span className={ponto}>•</span>
-                    <Link href={'/sobre'} className={link_desktop}>
+                    <Link href={'/sobre'} className={`${link_desktop} ${pathname === '/sobre' ? active_button : ''}`}>
                         {t("sobre")}
                     </Link>
                 </nav>
