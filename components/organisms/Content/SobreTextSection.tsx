@@ -26,21 +26,29 @@ export default async function SobreTextSection(){
 
     const section = 'w-full max-w-3xl mx-auto px-4 py-12 space-y-12';
 
-    const badge = t("badge");
-    const title = t("title");
-
     return(
         <section className={section}>
 
-            <ArticleBlock badge={badge} title={title}>
+            <ArticleBlock badge={t("badge")} title={t("title")}>
                 <p>
                     {t("p1_start")} <strong>{t("p1_strong")}</strong> {t("p1")}
                 </p>
                 <p>
                     {t("p2")}
                 </p>
+                
+            </ArticleBlock>
+
+            <ArticleBlock title={t("title2")}>
 
                 <FeatureList items={diferenciais}/>
+                
+            </ArticleBlock>
+
+            <ArticleBlock title={t("title3")}>
+                <p>
+                    {t("aprendizados")}
+                </p>
             </ArticleBlock>
         </section>
     );

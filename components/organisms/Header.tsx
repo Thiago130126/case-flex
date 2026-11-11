@@ -74,8 +74,10 @@ export default function Header(){
 
             {isOpen && (
                 <nav className={menu_mobile}>
-                    <Link href={'/'} className={link_mobile} onClick={() => setIsOpen(false)}>{t("home")}</Link>
-                    <Link href={'/sobre'} className={link_mobile} onClick={() => setIsOpen(false)}>
+                    <Link href={'/'} className={`${link_mobile} ${pathname === '/' ? active_button : ''}`} onClick={() => setIsOpen(false)}>
+                        {t("home")}
+                    </Link>
+                    <Link href={'/sobre'} className={`${link_mobile} ${pathname === '/' ? active_button : ''}`} onClick={() => setIsOpen(false)}>
                         {t("sobre")}
                     </Link>
                 </nav>

@@ -95,6 +95,9 @@
             "d3": "Construído com Next.js, React e Tailwind CSS com arquitetura modular.",
             "t4": "Focado em Devs & Criadores",
             "d4": "Feito para acelerar a formatação de variáveis, constantes e slugs para a web."
-        }
+        },
+        "title2": "Princípios",
+        "title3": "Aprendizados",
+        "aprendizados": "Criar esse projeto, tem sido algo muito gratificante e legal, adquiri diferente dos meus projetos anteriores, aqui estou focando em ir além de um código que funciona, a ideia, é fazer um código de fácil de manutenção, escalável e mais profissional. Passei bastante tempo refatorando o código e pensando em como organizar o código de forma mais modular, fácil de manter e de escalar."
     }
 }
