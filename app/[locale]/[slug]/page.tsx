@@ -1,3 +1,4 @@
+import BoringSite from "@/components/Pages/BoringSite";
 import Sobre from "@/components/Pages/Sobre";
 import { getCanonicalpath, Locale } from "@/i18n/routes";
 import { notFound } from "next/navigation";
@@ -8,7 +9,6 @@ interface SlugPageProps{
         slug: string;
     }>;
 }
-
 
 
 export default async function Page({params}: SlugPageProps){
@@ -23,6 +23,9 @@ export default async function Page({params}: SlugPageProps){
     switch(canonicalPath){
         case '/sobre':
             return <Sobre/>;
+        
+        case '/boring-site':
+            return <BoringSite/>
         
         default:
             notFound();

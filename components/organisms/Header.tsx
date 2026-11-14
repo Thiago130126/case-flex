@@ -30,8 +30,8 @@ export default function Header(){
 
     // Mobile
     const btn_hamburguer = 'md:hidden p-2 rounded-lg text-zinc-400 hover:text-lime-300 hover:bg-zinc-700/50 transition-colors focus:outline-none';
-    const menu_mobile = 'md:hidden px-4 pt-2 pb-5 space-y-2 border-t border-zinc-700/50 bg-zinc-800/95 backdrop-blur-md animate-in slide-in-from-top duration-200';
-    const link_mobile = 'block py-2 px-3 rounded-md text-base font-medium text-zinc-300 hover:text-lime-300 hover:bg-zinc-700/40 transition-colors';
+    const menu_mobile = 'md:hidden px-4 pt-2 pb-5 space-y-2 text-zinc-300 border-t border-zinc-700/50 bg-zinc-800/95 backdrop-blur-md animate-in slide-in-from-top duration-200';
+    const link_mobile = 'block py-2 px-3 rounded-md text-base font-medium hover:text-lime-300 hover:bg-zinc-700/40 transition-colors';
 
     const svg = 'w-6 h-6';
 
@@ -77,7 +77,7 @@ export default function Header(){
                     <Link href={'/'} className={`${link_mobile} ${pathname === '/' ? active_button : ''}`} onClick={() => setIsOpen(false)}>
                         {t("home")}
                     </Link>
-                    <Link href={'/sobre'} className={`${link_mobile} ${pathname === '/' ? active_button : ''}`} onClick={() => setIsOpen(false)}>
+                    <Link href={'/sobre'} className={`${link_mobile} ${pathname === '/sobre' ? active_button : ''}`} onClick={() => setIsOpen(false)}>
                         {t("sobre")}
                     </Link>
                 </nav>

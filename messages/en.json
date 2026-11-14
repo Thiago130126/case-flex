@@ -95,6 +95,9 @@
             "d3": "Built with Next.js, React, and Tailwind CSS using a modular architecture.",
             "t4": "Focused on Developers & Creators",
             "d4": "Designed to speed up the formatting of variables, constants, and slugs for the web."
-        }
+        },
+        "title2": "Principles",
+        "title3": "Lessons Learned",
+        "aprendizados": "Creating this project has been a very rewarding and enjoyable experience. It’s been different from my previous projects; here, I’m focusing on going beyond just code that works—the idea is to create code that’s easy to maintain, scalable, and more professional. I’ve spent a lot of time refactoring the code and thinking about how to organize it in a more modular way that’s easy to maintain and scale."
     }
 }
